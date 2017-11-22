@@ -6,9 +6,20 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+
+    <!-- https://bootswatch.com/simplex/ -->
+    <link rel='stylesheet' href='//bootswatch.com/4/minty/bootstrap.min.css' />
+    <style href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></style>
+
+
+
+
   </head>
 
   <body>
+    <%= render 'layouts/header' %>
+
     <%= yield %>
   </body>
 </html>
