@@ -1,0 +1,12 @@
+<h1> Style Item </h1>
+
+<p><strong> Item Category: </strong><%= @style_item.item_type %></p>
+<p><strong> description: </strong><%= @style_item.description %> </p>
+
+
+<hr/>
+<%= link_to 'All Style Items for this Location', store_style_items_path %>
+<hr/>
+<%= link_to 'Edit Style Item', edit_store_style_item_path %>
+<hr/>
+<%= link_to 'Delete this Style Item', store_style_item_path, method: :delete, data: { confirm: 'Are you sure?' } %>

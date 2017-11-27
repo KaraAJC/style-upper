@@ -1,0 +1,23 @@
+<%= form_for [@store, @style_item] do %>
+  <% if @style_item.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@style_item.errors.count, "error") %> prohibited this style item from being saved:</h2>
+
+      <ul>
+      <% @style_item.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <label>Name:</label><br>
+  <%= text_field_tag :item_type, @style_item.item_type %><br>
+  <%= f.select :desired_attribute, ['work', 'weekend','datenight', 'casual']%>
+
+
+  <label>Description</label><br>
+  <%= text_area_tag :description, @style_item.description %><br>
+
+  <%= submit_tag "Submit Changes" %>
+<% end %>

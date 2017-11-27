@@ -1,0 +1,10 @@
+
+<%= link_to 'Create a Style Item', new_store_style_item_path %>
+
+<ul>
+<% @style_items.each do |style_item| %>
+  <li><%= link_to style_item.item_type, store_style_item_path(id: style_item.id) %></li>
+<% end %>
+</ul>
+
+<%= link_to 'Back to All Locations', stores_path %>

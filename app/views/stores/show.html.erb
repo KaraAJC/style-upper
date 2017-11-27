@@ -1,0 +1,29 @@
+<div class='page-header'>
+  <h1><%= @store.store_name %></h1>
+</div>
+
+<div class='row'>
+  <div class='col-lg-12'>
+    <h4>Description</h4>
+    <p><%= @store.description %></p>
+
+    <h4>Address</h4>
+    <p><%= @store.address %></p>
+
+    <h5>   <%= link_to 'All Style posts for this Location', store_style_items_path(@store) %> </h5>
+
+
+
+  </div>
+
+</div>
+
+
+<div class='well'>
+  <%= link_to 'Edit', edit_store_path(@store), class: 'btn btn-primary' %> |
+  <%= link_to 'Back', stores_path %> |
+</div>
+
+<div class='col-lg-6'>
+  <%= render 'google_map', store: @store %>
+</div>
