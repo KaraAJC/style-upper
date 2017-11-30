@@ -1,4 +1,4 @@
-<%= form_for [@store, @style_item] do %>
+<%= form_for [@store, @style_item], html: { multipart: true } do %>
   <% if @style_item.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@style_item.errors.count, "error") %> prohibited this style item from being saved:</h2>
@@ -13,11 +13,13 @@
 
   <label>Name:</label><br>
   <%= text_field_tag :item_type, @style_item.item_type %><br>
-  <%= f.select :desired_attribute, ['work', 'weekend','datenight', 'casual']%>
-
 
   <label>Description</label><br>
   <%= text_area_tag :description, @style_item.description %><br>
+
+  <label>Image:</label><br>
+  <%= file_field :picture, @style_item.picture %>
+  <%= hidden_field :picture_cache, @style_item.picture_cache %>
 
   <%= submit_tag "Submit Changes" %>
 <% end %>

@@ -54,6 +54,6 @@ class StyleItemsController < ApplicationController
 
   def style_item_params
 
-    params.permit(:store_id, :item_type, :description)
+    params.permit(:store_id, :item_type, :description, :picture, :picture_cache)
   end
 end

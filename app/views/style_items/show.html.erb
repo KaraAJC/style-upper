@@ -3,6 +3,7 @@
 <p><strong> Item Category: </strong><%= @style_item.item_type %></p>
 <p><strong> description: </strong><%= @style_item.description %> </p>
 
+<p> <%= image_tag(@style_item.picture.url, alt: 'Image') if @style_item.picture? %> </p>
 
 <hr/>
 <%= link_to 'All Style Items for this Location', store_style_items_path %>
