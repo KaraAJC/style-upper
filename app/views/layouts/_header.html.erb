@@ -14,10 +14,10 @@
       <li class="nav-item dropdown">
        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Styles</a>
        <div class="dropdown-menu">
-         <a class="dropdown-item" href="#">Work</a>
-         <a class="dropdown-item" href="#">Weekend</a>
-         <a class="dropdown-item" href="#">Date Night</a>
-         <a class="dropdown-item" href="#">Casual</a>
+         <a class="dropdown-item" href="/work">Work</a>
+         <a class="dropdown-item" href="/weekend">Weekend</a>
+         <a class="dropdown-item" href="/datenight">Date Night</a>
+         <a class="dropdown-item" href="/casual">Casual</a>
        </div>
      </li>
 
@@ -30,7 +30,26 @@
       <li class="nav-item">
         <a class="nav-link" href="/faq">Help</a>
       </li>
+
+      <% if current_user %>
+       <p>Hello, <%= current_user.name %>!
+       <%= link_to 'Logout', destroy_user_session_path, method: :delete %>
+      <% else %>
+
+       <li class="nav-item">
+         <a class="nav-link" <%= link_to 'Register', new_user_registration_path %> </a>
+       </li>
+       <li class="nav-item">
+         <a class="nav-link"  <%= link_to 'Login', new_user_session_path %></a>
+       </li>
+      
+      <% end %>
     </ul>
 
+
+
+
   </div>
+
+
 </nav>

@@ -5,6 +5,6 @@ class StyleItem < ApplicationRecord
   validates :item_type, presence: true
   validates :description, presence: true
 
-  
+
 
 end
