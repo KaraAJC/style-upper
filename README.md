@@ -1,24 +1,74 @@
-# README
+# Title
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Description
+Add a one-sentence description of this project. and a [link to the live demo](#).
 
-Things you may want to cover:
+### Features
+- [x] **completed feature**: What this feature does
+- [ ] **pending feature**: What this feature does
 
-* Ruby version
+### ScreenShots
+![Image title](imagelink.jpg)
+![Image title](imagelink.jpg)
+![Image title](imagelink.jpg)
 
-* System dependencies
+## Context
+### Motivation
+Add a description of your motivation for starting this project. Include both where the idea came from, and the motivation for using the tech stack or other implementation features that you've used; what has this project taught you?
 
-* Configuration
+### Personas
+Write a narrative of the people you envision using this app. what need is it solving in their life?
 
-* Database creation
+### User Stories
+- As a (type of user/persona), I'd like to (take this action) so that (I fulfill this need).
 
-* Database initialization
+### User Flow
 
-* How to run the test suite
+#### (persona 1)
+ 1. starts here
+ 2. clicks/moves to here,
+ 3. completes their goal.
+ 4.
 
-* Services (job queues, cache servers, search engines, etc.)
+#### (persona 2)
+ 1. starts here
+ 2. clicks/moves to here,
+ 3. completes their goal.
+ 4.
 
-* Deployment instructions
+## Technical Specs
+what's your stack? what dependencies or gems shoul folks be aware that you've used? have links if folks may need reference to them.
+- spec one
+- spec two
 
-* ...
+## Requirements Checklist
+- [ ] Unit Tests Written (Review Coverage)
+- [ ] Style Guide Written
+- [ ] Model validations configured
+- [ ] Keys/Secrets secure
+- [ ] Front-End Accessibility Tested
+- [ ] Mobile Responsiveness Tested
+- [ ] Deployment configured
+
+## Implementation Instructions
+### Environment Setup
+```
+add instructions for someone to prep their env to be ready to run your pgm
+```
+### Running
+```
+add instructions for how to run your pgm
+```
+### Tests
+```
+add instructions for running tests
+```
+## License
+add buttons and info on licensing chosen.
+
+## Contributing
+instructions for how someone can contribute, if desired.
+if/when you start having contributors, be sure to choose/enforce a code of conduct.
+
+## Resources & Thanks
+If any resources or assistance used, make sure to reference and thank!

@@ -53,23 +53,15 @@ class StyleItemsController < ApplicationController
     @store = Store.find(params[:store_id])
   end
 
-<<<<<<< HEAD
 
-=======
->>>>>>> f69ac5ac4278838c0cc8358b0031c288e1d0f4a7
   def update_params
     update_params = style_item_params.to_h
     update_params[:picture] = update_params[:picture].first
     update_params
   end
-<<<<<<< HEAD
+
 
   def style_item_params
-
-=======
-
-  def style_item_params
->>>>>>> f69ac5ac4278838c0cc8358b0031c288e1d0f4a7
     params.permit(:store_id, :item_type, :description, picture: [])
   end
 end
